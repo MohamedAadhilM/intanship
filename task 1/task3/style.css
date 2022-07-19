@@ -20,9 +20,9 @@ a:active {
   color: blue;
   }
   button {
-  background-color: #4CAF50; /* Green */
+  background-color: #8f1f99; /* Green */
   border: none;
-  color: white;
+  color: rgb(15, 1, 1);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
@@ -33,53 +33,43 @@ a:active {
   cursor: pointer;
 }
 
-.button1 {
-  background-color: white; 
+.button {
+  background-color: rgb(255, 5, 255); 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 2px solid #9b2a8c;
 }
 
-.button1:hover {
-  background-color: #4CAF50;
+.button:hover {
+  background-color: #f50a64;
   color: white;
 }
 
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
+{}
+.search {
+padding: 10px;
+color: black;
+border-radius: 4px;
+display: flex;
+align-items: center;
+}
+.search :is(input,button) {
+  color:inherit;
+  border: none;
+}
+.search__input {
+  width: 0;
+  transition: width .5s;
+}
+.search__btn {
+  width:25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+}
+.search:focus-within input{
+  width: 200px;
+}
+::placeholder{
+  color: inherit;
 }
 
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-
-.button3 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #f44336;
-}
-
-.button3:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-.button4 {
-  background-color: white;
-  color: black;
-  border: 2px solid #e7e7e7;
-}
-
-.button4:hover {background-color: #e7e7e7;}
-
-.button5 {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-}
-
-.button5:hover {
-  background-color: #555555;
-  color: white;}
