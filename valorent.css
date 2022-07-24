@@ -1,0 +1,132 @@
+body{
+    background-image:url("https://cdna.artstation.com/p/assets/images/images/025/669/906/large/dino-rhinosaur-done-wp-pink-with-pic.jpg?1586544608");
+}
+.hi{
+    color: blueviolet;
+    font-style: italic;
+}
+.i{
+    color: green;
+    font-style: italic;
+}
+.am{
+    color: rgb(255, 136, 0);
+    font-style: italic;
+}
+.aaa{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.aad{
+    color: white;
+}
+.search {
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    }
+    .search :is(input,button) {
+      color:black;
+      border: none;
+    }
+    .search__input {
+      width: 0;
+      transition: width .5s;
+    }
+    .search__btn {
+      width:25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+    }
+    .search:focus-within input{
+      width: 200px;
+    }
+    ::placeholder{
+      color: black;
+    }
+    .button {
+        background-color: #0e0bee; /* Green */
+        border: none;
+        color: rgb(255, 8, 8);
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #fa2a05;
+      }
+      .button1:hover {
+        background-color: #f32e0b;
+        color: white;
+      }
+#ioo{
+    margin-left: 100vh;
+}
+#ppp{
+    align-items: center;
+}
+.fdd{
+    width: 100vh;
+}
+#check{
+    display: none;
+}
+.hame{
+    position: relative;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0%;
+    cursor: pointer;
+}
+.line{
+    position: absolute;
+    width: auto;
+}
+.line-main::before,.line-main::after,
+.line-split::before,.line-split::after{
+    content:'';
+    position: absolute;
+    width: inherit;
+    height: 2px;
+    background-color: rgb(243, 233, 233);
+    transform: translate .5s;
+}
+.line-main::before{
+    transform: translate(-7px);
+}
+.line-main::after{
+    transform: translate(7px);
+}
+.line-split::before
+.line-split::after{
+    width: 10px;
+    transition: transform .5s, opacity .5s;
+}
+.line-split::after{
+    transform: translateX(10px);
+}
+#check:checked~.line-main::before{
+    transform: rotate(45deg);
+}
+#checkbox:checked~.line-main::after{
+    transform: rotate(-45deg);
+}
+#check:checked~.line-split::before{
+    transform: translateX(-10);
+    opacity: 0;
+}
+#check:checked~.line-split::after{
+    transform: translateX(20px);
+    opacity: 0;
+}
